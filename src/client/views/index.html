@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Trip.go</title>
+    <body>
+<!-- 
+        <header>
+            <div class="navbar_logo">
+            </div>
+                <div class ='icons'>
+                <div class="cloud_icon"></div>
+                <div class="node_icon"><img src=''></div>
+            </div>
+        </header> -->
+
+        <main id="main"> 
+            <!-- Header -->  
+            <!-- Navigation -->
+            <header>
+             <div class="nav-container">
+                <nav class="nav-checkbox">
+                     <a href="#" class="nav-logo">Trip.go</a>
+                        <input type="checkbox" id="tab-nav" class="tab-nav">
+                        <label for="tab-nav" class="tab-nav-label">Menu</label>
+                     <div class="tab-content">
+                        <ul id="tab-content">
+                            <li><a class="nav-logo" href="#">Flights</a></li>
+                            <li><a class="nav-logo" href="#">Accomodation</a></li>
+                        </ul>
+                     </div>
+                </nav>
+             </div>
+           </header> 
+
+            <div class= "heading">
+            <h1>Take only memories, leave only footprints. </h1>
+            </div>
+            
+            <section>
+                <div class="col-25">
+                    <div class="content">
+                        <form class="form_style" onsubmit="Client.handleSubmit(event)">
+                            <input id="name" type="text" name="input" placeholder="Please enter a valid name"> 
+                            <input id="carbs" type="text" name="input" placeholder="Please enter  max numb of carbs">    
+                            <input id="cuisine" type="text" name="input" placeholder="Please enter a cuisine">                          
+                            <input id="submit" type="submit" value="submit">
+                        </form>
+                    </div>   
+                </div> 
+            <section>
+
+                <section>
+                    <div id = "form_title">
+                        <h2>Travel information</h2>
+                    </div>
+                    <div class="col-75">
+                        <div id="results">
+                            <div class="results__container">
+                                <h3>City Image</h3>
+                                <div class="cityImg"><img id="myAnchor" src="" alt="" width="304" height="228" style="border: 3px solid whitesmoke; border-right-width: 8px;
+                                   border-left-width: 8px; border-top-width: 8px; border-bottom-width: 25px";></div>
+                                  
+                                  <div class="rec1"><img id="recipe1" src="" alt="" width="304" height="228" style="border-radius: 50%; border: 3px solid whitesmoke";></div>
+                                    <form class= "form-control">
+                                        <h3>Departing:</h3>
+                                        <label for="departure_date"></label>
+                                        <input type="date" id="departure_date" name="departure_date">
+                                    </form>
+                                    <form class= "form-control">                                    
+                                        <h3>Returning:</h3>
+                                        <label for="arrival_date"></label>
+                                        <input type="date" id="arrival_date" name="arrival_date">
+                                    </form>
+                                <h3>Time travel (days): </h3>
+                                <div class="travelTime"></div>
+                                <h3>Country code</h3>
+                                <div class="countryCode"></div>
+                                <h3>First recipe</h3>
+                                <div class="cityName"></div>
+                                <h3>List of recipes</h3>
+                                     <div class="recipe-1"></div>
+                                     <div class="recipe-2"></div>
+                                     <div class="recipe-3"></div>
+                                     <div class="recipe-4"></div>
+                                     <div class="recipe-5"></div>
+                                <h3>Temperature</h3>
+                                <div class="temperature"></div>
+                                <h3>Weather Description</h3>
+                                <div class="weatherDescription"></div>
+                                <div class = "icons" ><img id = "iconID" src=""  alt='' /></div>
+                            </div>
+                        </div>  
+                    </div>         
+                </section> 
+        </main>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+            }
+        </script>
+<footer class="footer">
+    <ul class="footer-nav">
+        <li><a href="#" target="_blank">GeoNames</a></li>
+        <li><a href="#" target="_blank">WeatherBit</a></li>
+        <li><a href="#" target="_blank">Pixabay</a></li>
+        <li><a href="#" target="_blank">Node.js®</a></li>
+    </ul>
+</footer>
+</body>
+</html>

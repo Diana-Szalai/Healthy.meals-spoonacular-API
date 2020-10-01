@@ -1,0 +1,310 @@
+$first-color: #518346;
+$second-color: #80bc58;
+$white-color: #ffffff;
+$black-color: #000000a6;
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap");
+
+
+// body {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh;
+//     font-family: 'Lemonada', sans-serif ;
+//     background-image: url(../views/photos/notebook.jpg) ;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position: relative;
+// }
+// main {
+//     flex: 2;
+// }
+
+ section {
+     max-width: 800px;
+     margin: 25px auto;
+ }
+
+ h1 {
+     display: flex;
+     justify-content: center;
+     color: $white-color;
+     font-size: 32px;
+     text-shadow: 2px 2px 5px black;
+     display: flex;
+     justify-content: center;
+     align-self: start;
+     padding: 2rem ;
+     font-family: 'Lemonada', sans-serif;
+    
+     }
+
+     label {
+         display: block;
+         font-family: 'Lemonada', sans-serif;
+         color: white;
+       
+     }
+    
+     input[type="date"] 
+         {
+         color: white;
+         border: 3px solid white;
+         background-color: transparent;
+         margin: .1rem 0;
+         margin-left: 2rem ;
+         padding: .4rem;
+         border-radius: 7px;
+         font-family: 'Lemonada', sans-serif;
+         
+         };
+   
+    body{
+        
+        overflow-x: hidden;
+        margin-top: 50px;
+        scroll-padding-top: 44px ;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: 'Lemonada', sans-serif ;
+        background-image: url(../views/photos/old-1920.jpg) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    *, *::before, *::after{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    #main {
+        position: relative;
+        //width: 1280px;
+        //background: #fff;
+        //flex:2;
+    }
+    
+    /*---------------------------------------HEADER*/
+
+    header{
+        position: fixed;
+        top: 0;
+        width: auto;
+        background-color: white;
+        z-index: 1000;
+        border-bottom: 1px solid darkred;
+        margin: auto;
+    }
+
+    h4{
+        margin-top: 0;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #4b4b4b;
+        font-size: 120%;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+    }
+
+
+    /*---------------------------------------NAVIGATION*/
+
+    .nav-container {
+        width: 105rem;
+        margin: auto;
+        padding: 15px 15px;
+    }
+
+    .nav-checkbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .nav-logo{
+        text-decoration: none;
+        color:darkred;
+        display: grid;
+        justify-self: start;
+        margin-left: 20px;
+        padding: 2px;
+        font-weight: 600;
+    }
+    .nav-logo:hover{
+        color:#000;
+    }
+    .tab-nav{
+        display:none;
+    }
+    .tab-nav-label{
+        color:black;
+        display:none;
+    }
+    .tab-content {
+        list-style: none;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 20px;  
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+    /*----------------------------------STYLE ON SCROLL*/
+
+    .nav-container.scroll {
+        background-color: darkred;
+    }
+
+    .nav-container.scroll a{
+        color: #fff;
+    }
+
+    /*---------------------------------ACTIVE NAVIGATION*/
+
+    .nav-container.scroll a.active {
+        color:whitesmoke;
+        border-bottom: 3px solid whitesmoke;
+    }
+
+    .nav-container a.active {
+        color: darkred;
+        border-bottom: 3px solid darkred;
+    }
+    
+    /* Desktops and laptops ----------- */
+    @media screen and (max-width:1824px) {
+    /* Styles */
+        
+        header {
+            width: 100%;
+        }
+        .nav-container {
+            width: 100%;
+        }
+        h1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 1.6rem;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            text-align: center ;
+        
+        }
+    }
+    /* iPads (portrait and landscape) ----------- */
+   // @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+   
+    @media screen and (max-width: 768px) {
+            /* Styles */
+            section {
+                width: fit-content;
+                height: fit-content;
+                margin: auto;
+            }
+
+            .tab-content  {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column: 1/4;
+            text-align: center;
+            max-height: 0;
+            overflow: hidden;
+            justify-self: center;
+            transition: all ease-in-out 0.4s;
+            
+        }
+        li {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column: 1/4;
+            text-align: center;
+            transition: all ease-in-out 0.4s;
+            margin-right: 5px;  
+        }
+        
+        li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+        .tab-nav-label {
+            display: grid;
+            cursor: pointer;
+            grid-column: 3;
+            padding-right: 20px;
+        }
+        .nav-checkbox input:checked ~ .tab-content {
+            max-height: 400px;
+        }
+        .tab-content li{
+            padding: 20px 0;
+            margin-right: 0px;
+        }
+        .nav-checkbox input:checked ~ .tab-nav-label {
+            color: #000;
+        }
+        
+        h1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 1.6rem;
+            word-spacing: 3px;
+            letter-spacing: 4px;
+            text-align: center ;
+        
+        }
+    
+        .column {
+            width: 100%;
+        }
+    }
+    /* iPhone 6 (landscape) ----------- */
+    @media screen and (max-width: 375px)  {
+        /* Styles */
+    section {
+            width: auto;
+            margin: 25px auto;
+            height: 200vh;
+        }
+   
+    .column {
+        width: 100%;
+    }
+
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 1.3rem;
+        text-align: center ;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+ 
+    }
+
+  }
+        
+ 

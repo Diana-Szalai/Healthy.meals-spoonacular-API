@@ -1,0 +1,16 @@
+$first-color: #518346;
+$second-color: #80bc58;
+$white-color: #ffffff;
+$black-color: #000;
+
+header {
+    
+    display: flex;
+    widows: 100rem;
+    justify-content: space-between;
+    padding: 5px 15px;
+    background-color: $white-color;
+    border-bottom: 1px solid darkred;
+}
+    
+

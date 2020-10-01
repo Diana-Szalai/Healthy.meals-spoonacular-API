@@ -1,0 +1,105 @@
+$first-color: #f5f5f5b2;
+$white-color: #ffffff;
+$black-color: #000000a8;
+
+.form_style {
+    display:flex;
+    justify-content: center;
+   // width: 100%;
+    //margin: auto;
+}
+
+@media screen and (max-width:1824px) {
+    /* Styles */
+
+#name {
+    display: inline-flex;
+    justify-self: start;
+    width: 65%;
+    background: $black-color;
+    border: 2px $black-color;
+    box-shadow: 10px 12px 15px #44444469;
+    height: auto;
+    border-right: 30px;
+    border-radius: 5px;
+    border: 1px;
+    padding: 15px;
+    font-size: 1rem;
+    font-family: 'Lemonada', sans-serif ;
+    
+}
+
+#submit{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    height: auto;
+    background: $black-color;
+    border: 2px $black-color;
+    box-shadow: 10px 12px 15px #44444469;
+    font-size: 1.2rem;
+    color: $white-color;
+    height: auto;
+    border-left: 50px;
+    border-radius: 5px;
+    margin-left: 15px;
+    font-family: 'Lemonada', sans-serif ;
+    
+}
+
+#results {
+    background-color: $black-color;
+    border: 2px solid $black-color;
+    display: flex;
+    width: auto;
+    border: 2px solid #f9feff;
+    margin: auto;
+    box-shadow: 10px 12px 15px #44444469;
+    height: auto;
+    border-right: 10px;
+    border-radius: 5px;
+    border: 1px;
+    justify-content: start;
+
+
+    h3 {
+        color: $first-color;
+        font-size: 1.2rem;
+        text-decoration: underline;
+        align-self: start;
+        margin: 1rem 2rem;
+        text-transform: uppercase;
+    }
+
+    div {
+        color: $white-color;
+        font-size: 18px;
+        font-weight: bold;
+        align-self: start;
+        margin: 1rem 2rem;
+        }
+
+   }
+    #form_title {
+    display: flex;
+    justify-content: start;
+
+     h2 {
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        color: $white-color;
+        text-shadow: 2px 2px 5px black;
+        align-self: start;
+        margin: 1rem 2rem;
+        }
+    }
+}
+
+.icons {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    //padding: 15px;
+    //border: 2px solid darkred;
+}
