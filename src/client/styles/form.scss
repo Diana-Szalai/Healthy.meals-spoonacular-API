@@ -5,8 +5,7 @@ $black-color: #000000a8;
 .form_style {
     display:flex;
     justify-content: center;
-   // width: 100%;
-    //margin: auto;
+   
 }
 
 @media screen and (max-width:1824px) {
@@ -55,7 +54,7 @@ $black-color: #000000a8;
     border: 2px solid #f9feff;
     margin: auto;
     box-shadow: 10px 12px 15px #44444469;
-    height: auto;
+    height: 100vh;
     border-right: 10px;
     border-radius: 5px;
     border: 1px;
@@ -100,6 +99,5 @@ $black-color: #000000a8;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    //padding: 15px;
-    //border: 2px solid darkred;
+    
 }
